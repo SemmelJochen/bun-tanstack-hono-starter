@@ -1,0 +1,25 @@
+{
+  "name": "tanstarter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:ui": "bun --filter=ui dev",
+    "dev:api": "bun --filter=api dev",
+    "build:ui": "bun --filter=ui build",
+    "lint": "bun --filter=* lint"
+  },
+  "workspaces": [
+    "apps/ui",
+    "apps/api"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "^3.6.1",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
